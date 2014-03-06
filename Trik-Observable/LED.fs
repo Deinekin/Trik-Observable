@@ -1,10 +1,7 @@
-﻿module LED
+﻿namespace TrikObservable.LED
 
 open System
-open Extern
-open Config
-open PowerMotor
-
+open TrikObservable 
 type LED(commandNumbers: int array) =
     let mutable inner = 0
     interface IObserver<int array> with
@@ -14,7 +11,7 @@ type LED(commandNumbers: int array) =
                 printfn "%A" data
             else 
                 inner <- inner + 1
-            Array.iter2 (fun x v -> linux (fun() -> Extern.send x v 1)) commandNumbers data
+            Array.iter2 (fun x v -> Extern.linux (fun() -> Extern.send x v 1)) commandNumbers data
         member this.OnError(e) = ()
         member this.OnCompleted() = ()
     

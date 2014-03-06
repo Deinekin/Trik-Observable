@@ -1,11 +1,10 @@
-module Config
+module TrikObservable.Config
 
 open System
 open System.Xml
 open FSharp.Data
 open System.Xml.Linq
 open System.Diagnostics
-open Extern
 
 type Config = XmlProvider<"config.xml">
 

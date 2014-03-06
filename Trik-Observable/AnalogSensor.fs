@@ -1,9 +1,8 @@
-﻿module AnalogSensor
+﻿namespace TrikObservable.AnalogSensor
 
 open System
-open Extern
-open Config
 open System.Reactive.Linq
+open TrikObservable
 
 type AnalogSensor(number) = 
     let analogMin = 0

@@ -1,20 +1,17 @@
-﻿module Program
+﻿module TrikObservable.Program
+
 
 open System
 open System.Diagnostics
 open System.Threading
 open System.Collections.Generic
 open System.Reactive.Linq
-open Gyroscope
-open Config
-open LED
-
-printfn "First appearance" 
-
+open TrikObservable
 open Extern
 open Config
-open Sensor3d
-open PowerMotor
+open TrikObservable.PowerMotor
+
+printfn "First appearance" 
 
 type GyroInfo = int*int*int
 

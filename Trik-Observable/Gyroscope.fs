@@ -1,4 +1,4 @@
-﻿module Gyroscope
+﻿module TrikObservable.Gyroscope
 
 open Sensor3d
 open Config

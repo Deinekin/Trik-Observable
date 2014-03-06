@@ -1,4 +1,4 @@
-﻿module Extern 
+﻿module TrikObservable.Extern 
 
 open System
 open System.Runtime.InteropServices

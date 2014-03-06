@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Trik-Observable", "Trik-Observable\Trik-Observable.fsproj", "{B3C7B4ED-EAD9-4044-B37B-5F5660BD6A14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CStestFS", "CStestFS\CStestFS.csproj", "{9628AC54-F932-458E-8C66-340A3777F93F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{B3C7B4ED-EAD9-4044-B37B-5F5660BD6A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3C7B4ED-EAD9-4044-B37B-5F5660BD6A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3C7B4ED-EAD9-4044-B37B-5F5660BD6A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9628AC54-F932-458E-8C66-340A3777F93F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9628AC54-F932-458E-8C66-340A3777F93F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9628AC54-F932-458E-8C66-340A3777F93F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9628AC54-F932-458E-8C66-340A3777F93F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-module Sensor3d
+namespace TrikObservable.Sensor3d
 
 open System
 open System.IO
