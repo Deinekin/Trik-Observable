@@ -13,6 +13,7 @@
     <Name>Trik.Observable</Name>
     <ProductVersion>12.0.0</ProductVersion>
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <UseMSBuildEngine>False</UseMSBuildEngine>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,13 +65,13 @@
     <None Include="App.config" />
     <None Include="packages.config" />
     <Compile Include="Helpers.fs" />
-    <Compile Include="Config.fs" />
     <Compile Include="Servomotor.fs" />
     <Compile Include="PowerMotor.fs" />
     <Compile Include="Sensor3d.fs" />
     <Compile Include="AnalogSensor.fs" />
     <Compile Include="LED.fs" />
     <Compile Include="LedStripe.fs" />
+    <Compile Include="PadServer.fs" />
     <Compile Include="Gyroscope.fs" />
     <Compile Include="Accelerometer.fs" />
     <Compile Include="Buttons.fs" />
@@ -86,9 +87,6 @@
     <Reference Include="FSharp.Core">
       <HintPath>..\packages\FSharp.Core.3.0.0.2\lib\net40\FSharp.Core.dll</HintPath>
     </Reference>
-    <Reference Include="policy.2.3.FSharp.Core">
-      <HintPath>..\packages\FSharp.Core.3.0.0.2\lib\net40\policy.2.3.FSharp.Core.dll</HintPath>
-    </Reference>
     <Reference Include="System.Reactive.Interfaces">
       <HintPath>..\packages\Rx-Interfaces.2.2.2\lib\net40\System.Reactive.Interfaces.dll</HintPath>
     </Reference>
@@ -100,9 +98,6 @@
     </Reference>
     <Reference Include="System.Reactive.PlatformServices">
       <HintPath>..\packages\Rx-PlatformServices.2.2.3\lib\net40\System.Reactive.PlatformServices.dll</HintPath>
-    </Reference>
-    <Reference Include="FSharp.Data">
-      <HintPath>..\packages\FSharp.Data.1.1.10\lib\net40\FSharp.Data.dll</HintPath>
     </Reference>
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

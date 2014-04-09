@@ -1,9 +1,8 @@
-﻿namespace Trik.Observable
+﻿namespace Trik
 open System
 open System.IO
 open System.Reactive.Linq
 open System.Diagnostics
-open Trik
 open Trik.Helpers
 
 type Button (deviceFilePath) = 
@@ -26,5 +25,5 @@ type Button (deviceFilePath) =
             then evValue
             else readFile 0
         
-    member val Observable = Observable.Generate(readFile 0, Func<_,_> (konst true), Func<_,_> readFile , Func<_,_> id)
+    member val ToObservable = Observable.Generate(readFile 0, Func<_,_> (konst true), Func<_,_> readFile , Func<_,_> id)
      
