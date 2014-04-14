@@ -7,8 +7,15 @@ using System.IO;
 
 namespace TestObservableC
 {
+    /// <summary>
+    /// Class used to show how to work with video module. In file there are values from video module.
+    /// First(x) - divergence from the line, third(mass) - how many percents module camera can detect second we dont need.
+    /// </summary>
     public class Linetracer
     {
+        /// <summary>
+        /// Method used to trace the line and run along it. Not the final version, required some fixes
+        /// </summary>
         public static void Running()
         {
             while (true)
@@ -50,8 +57,15 @@ namespace TestObservableC
             }
         }
 
+        /// <summary>
+        /// Initializing motors
+        /// </summary>
         private static PowerMotor powerMotorLeft = new PowerMotor(0x17);
         private static PowerMotor powerMotorRight = new PowerMotor(0x14);
+
+        /// <summary>
+        /// Initializing reader from the file
+        /// </summary>
         private static StreamReader streamReader = new StreamReader(@"/tmp/dsp-detector.out.fifo");
     }
 }
