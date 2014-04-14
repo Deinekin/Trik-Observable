@@ -21,7 +21,8 @@ namespace TestObservableC
             //RunningObstacle.Running();
             //ForwardRunning.Running();
             //Lights.LightDiode();
-            RunningAlongWall.Running();
+            //RunningAlongWall.Running();
+            Linetracer.Running();
         }
     }
 }
